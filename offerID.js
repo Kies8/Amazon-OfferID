@@ -12,16 +12,16 @@ function copyText(){
     input.parentNode.removeChild(input);
 }
 
-
 document.body.onload = addElement;
 
-
 function addElement(){
-    var OfferIDcopy = document.createElement("BUTTON");
+    var targetDiv = document.getElementById('buyNow_feature_div');
+    
+    var OfferIDcopy = document.createElement("button");
     OfferIDcopy.innerHTML = "Copy OfferID";
     OfferIDcopy.addEventListener("click", copyText)
+    OfferIDcopy.classList.add("a-button-text");
+    OfferIDcopy.classList.add("button-copy");
 
-    OfferIDcopy.setAttribute("style","vertical-align: top; width: 90px; height: 40px; padding: 0; border-radius:2em; font-size: 14px; color: white; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); background: #2ecc71; border: 0; border-bottom: 2px solid #28be68; cursor: pointer; -webkit-box-shadow: inset 0 -2px #28be68; box-shadow: inset 0 -2px #28be68;")
-    var element = document.getElementById("imageBlock");
-    element.prepend(OfferIDcopy)
+    targetDiv.insertAdjacentElement('afterend', OfferIDcopy);
 }

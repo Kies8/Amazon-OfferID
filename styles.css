@@ -1,0 +1,13 @@
+/* styles.css */
+
+.button-copy {
+    background-color: rgb(210, 255, 96);
+    border-radius: 25px;
+    margin: 0;
+    padding: 1.5px;
+    margin-bottom: 10px;
+}
+
+.a-button-text {
+    background-color: rgb(210, 255, 96);
+}

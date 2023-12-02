@@ -1,16 +1,19 @@
 {
-  "manifest_version": 2,
-  "name": "Amazon OfferID - IdekDude",
+  "manifest_version": 3,
+  "name": "Amazon OfferID - Kieso 👹",
   "version": "1.0",
   "description": "Displays copy to clipboard OfferID button for Amazon.com items",
   "content_scripts": [
     {
       "matches": [
-        "*://*.amazon.com/*"
+        "*://*.amazon.com/*",
+        "*://*.amazon.it/*",
+        "*://*.amazon.es/*",
+        "*://*.amazon.de/*",
+        "*://*.amazon.fr/*"
       ],
-      "js": [
-        "offerID.js"
-      ]
+      "js": ["offerID.js"],
+      "css":["styles.css"]
     }
   ]
 }
